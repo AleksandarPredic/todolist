@@ -51,7 +51,8 @@ App is built using custom written MVC framework, PHP and MySQL.
 
 * Clone the repo: git clone https://github.com/AleksandarPredic/todolist.git
 * Run composer install
-* Run npm install -- for dev enviroment only
+* Run npm install -- for dev environment only
+* Run gulp -- for dev environment only 
 * Edit .htaccess RewriteBase -- if needed
 * Copy and rename .env.example to .env and edit data
 * Run web app
