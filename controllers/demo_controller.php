@@ -14,6 +14,11 @@ class Demo_Controller extends Controller {
      * Default controler
      */
     public function index() {
+
+        if ( $this->checkDbTables() ) {
+            $this->redirect('');
+        }
+
         $this->view->render('demo/index.php');
     }
 

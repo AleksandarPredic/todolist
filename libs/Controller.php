@@ -96,5 +96,14 @@ class Controller {
             $this->redirect('users/login');
         }
     }
-    
+
+    /**
+     * Check if required tables exists
+     * @return bool
+     */
+    protected function checkDbTables() {
+
+        return $this->model->verifyTables();
+
+    }
 }

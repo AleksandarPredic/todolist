@@ -21,5 +21,35 @@ class Model {
              character_set_results = 'utf8'"
         );
     }
+
+    /**
+     * Verify that required tables exist
+     * @return bool
+     */
+    public function verifyTables() {
+
+        try {
+            $result = $this->db->query("SELECT * FROM items");
+            if (false === $result) {
+                return false;
+            }
+        } catch (Exception $e) {
+            // We got an exception == table not found
+            return false;
+        }
+
+        try {
+            $result = $this->db->query("SELECT * FROM users");
+            if (false === $result) {
+                return false;
+            }
+        } catch (Exception $e) {
+            // We got an exception == table not found
+            return false;
+        }
+
+        return true;
+
+    }
     
 }

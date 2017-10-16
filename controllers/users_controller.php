@@ -205,14 +205,4 @@ class Users_Controller extends Controller {
         return true;
     }
 
-    /**
-     * Check if required tables exists
-     * @return bool
-     */
-    private function checkDbTables() {
-
-        return $this->model->verifyTables();
-
-    }
-
 }

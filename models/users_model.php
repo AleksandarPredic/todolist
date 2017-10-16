@@ -119,35 +119,5 @@ Class Users_Model extends Model{
         return password_hash($password, PASSWORD_BCRYPT);
     }
 
-    /**
-     * Verify that required tables exist
-     * @return bool
-     */
-    public function verifyTables() {
-
-        try {
-            $result = $this->db->query("SELECT * FROM items");
-            if (false === $result) {
-                return false;
-            }
-        } catch (Exception $e) {
-            // We got an exception == table not found
-            return false;
-        }
-
-        try {
-            $result = $this->db->query("SELECT * FROM users");
-            if (false === $result) {
-                return false;
-            }
-        } catch (Exception $e) {
-            // We got an exception == table not found
-            return false;
-        }
-
-        return true;
-
-    }
-
 }
 ?>
