@@ -1,39 +1,67 @@
 # Simple TODO list
 
-Requirements: 
-- nginx or apache server
+Multiple user TODO list with dashboard to manage notes per user. 
+This is custom app using MVC pattern using PHP and MySQL.
 
+Requirements: 
+* php: >=5.3.9
+* nginx or apache server
+* mod_rewrite
+* MySQL
 
 
 ## Table of contents
 
+* [Demo](#demo)
 * [Description](#description)
 * [Features](#features)
+* [Installation](#installation)
 * [Licence](#licence)
 * [Chengelog](#chengelog)
 * [Developers](#developers)
 * [Author information](#author-information)
 
+## Demo
+
+Please visit [TODO demo](http://todolist.acapredic.com)
+
 
 ## Description
 
-Simple TODO list with some quotes from Star Wars movie.
+Simple TODO list with some quotes from Star Wars movie. 
+
+You can register multiple users and 
+every one has it's own notes with dashboard to manage.
+
+App is built using custom written MVC framework, PHP and MySQL.
 
 
 ## Features
 
+* User registration
+* User login
+* Dashboard for notes managing
+* Add new note
+* Mark note completed
+* Delete note
+* Fully responsive
 
+
+## Installation
+
+* Clone the repo: git clone https://github.com/AleksandarPredic/todolist.git
+* Run composer install
+* Run npm install -- for dev enviroment only
+* Edit .htaccess RewriteBase -- if needed
+* Copy and rename .env.example to .env and edit data
+* Run web app
+* Use the wizard to install needed tables into database. Click button: Click here to use "The Force" and create tables
+* Create awesome notes :)
 
 
 ## Licence
 
-The WordPress Widget Boilerplate is licensed under the GPL v2 or later.
-
->This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
-
->This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
->You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+* MIT
 
 
 ## Chengelog
@@ -46,8 +74,6 @@ The WordPress Widget Boilerplate is licensed under the GPL v2 or later.
 ## Developers
 
 Miss a feature? Pull requests are welcome.
-
-The project is open-source and hopefully will receive contributions from awesome WordPress Developers throughout the world.
 
 
 ## Author information
