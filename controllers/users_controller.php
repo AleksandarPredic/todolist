@@ -188,7 +188,7 @@ class Users_Controller extends Controller {
         $first = rand(0, 9);
         $second = rand(0, 9);
         $_SESSION['capthca'] = $first + $second;
-        return "Prove you are not a Sit Lord: What is {$first} + {$second}?";
+        return "Prove you are not a Sit Lord: Calculate {$first} + {$second}?";
     }
 
     /**

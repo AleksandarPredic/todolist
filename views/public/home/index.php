@@ -25,10 +25,10 @@ foreach ($this->items as $item) {
             <?php if ( $active ) : ?>
             <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
                href="<?php echo URL; ?>home/deactivate?item_id=<?php echo intval($item['item_id']) ?>&nonce=<?php echo $this->nonce; ?>">
-                Deactivate
+                Mark completed
             </a>
             <?php else : ?>
-            <span class="mdl-button mdl-button--colored">Card deactivated</span>
+            <span class="mdl-button mdl-button--colored">Completed</span>
             <?php endif; ?>
 
             <!-- Right aligned menu on top of button  -->
