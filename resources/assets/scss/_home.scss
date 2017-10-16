@@ -1,0 +1,32 @@
+.content {
+
+  .mdl-card {
+
+    .mdl-menu__item {
+      padding: 0;
+    }
+
+    .mdl-navigation__link {
+      color: $color-grey-dark;
+      text-decoration: none;
+      line-height: 48px;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      display: block;
+    }
+
+    .mdl-card__date {
+      color: $color-grey-dark;
+    }
+
+    &.mdl-card--deactivated {
+      opacity: 0.5;
+    }
+
+    .mdl-button--icon {
+      float: right;
+      margin-right: 10px;
+    }
+  }
+}

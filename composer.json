@@ -1,0 +1,9 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^2.4",
+        "nesbot/carbon": "^1.22",
+        "ircmaxell/password-compat": "^1.0"
+    },
+    "require-dev": {
+    }
+}

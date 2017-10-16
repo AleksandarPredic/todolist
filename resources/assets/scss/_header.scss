@@ -1,0 +1,40 @@
+header {
+
+  .mdl-layout__header-row {
+    padding: 0 40px 0 80px;
+
+    .mdl-layout-title {
+      white-space: normal;
+      word-break: break-word;
+      word-wrap: break-word;
+      width: 100%;
+
+      span {
+        font-size: 16px;
+        font-style: italic;
+        font-weight:600;
+
+        @media (max-width: 480px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .avatar-dropdown {
+    padding: 23px 15px !important;
+  }
+
+  .mdl-layout__drawer-button i {
+    color: #757575;
+  }
+
+  .mdl-layout__header-row {
+
+    a.mdl-navigation__link {
+      color: $color-grey-dark;
+      line-height: 48px;
+    }
+  }
+
+}

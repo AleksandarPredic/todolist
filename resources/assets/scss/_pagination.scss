@@ -1,0 +1,40 @@
+.pagination {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 20px 10px;
+
+  li {
+    display: inline-block;
+
+    span {
+      margin: 5px;
+    }
+
+    a {
+      color: $color-grey;
+      text-decoration: none;
+      transition: color 0.3s;
+      padding: 10px;
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+
+    &.pagination__current {
+
+      a {
+        color: $color-black;
+        font-weight: 700;
+      }
+    }
+
+    @media (max-width: 1024px) {
+
+      &.pagination__other {
+        display: none;
+      }
+    }
+  }
+}
