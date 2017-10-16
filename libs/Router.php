@@ -16,7 +16,14 @@ class Router {
      */
     public function __construct($access = 'public') {
 
-        $url = !empty($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : null;
+        if ( isset($_SERVER['SERVER_SOFTWARE']) && false === strpos($_SERVER['SERVER_SOFTWARE'], 'nginx') ) {
+            // Apache
+            $url = !empty($_GET['url']) ? $_GET['url'] : null;
+        } else {
+            // Nginx
+            $url = !empty($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : null;
+        }
+
         $url = trim($url,'/');
         $url = filter_var($url, FILTER_SANITIZE_URL);
         $url = explode('?', $url);
@@ -25,13 +32,6 @@ class Router {
         $controller = !empty($url[0]) ? $url[0] : 'home';
         $function = !empty($url[1]) ? $url[1] : '';
         $parameter1 = !empty($url[2]) ? $url[2] : '';
-/*
-        if ( empty($_SESSION['user_id']) && $controller !== 'demo' ) {
-            if ($function != 'login' && $function != 'registration' && $function != 'signIn' && $function != 'addUser') {
-                header('Location: users/login');
-                die();
-            }
-        }*/
 
         $file = BASE_PATH . 'controllers/' . $controller . '_controller.php';
 

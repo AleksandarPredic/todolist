@@ -158,7 +158,7 @@ class Users_Controller extends Controller {
             $this->redirect('', 'You are logged in. May the force be with you!');
         } else {
             $this->setOldFormValues($oldFormValues);
-            $this->redirect('users/login', 'Login data error!');
+            $this->redirect('users/login', 'Login data error! Maybe you should register first.');
         }
     }
 
