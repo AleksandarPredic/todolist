@@ -3,6 +3,11 @@
 Multiple user TODO list with dashboard to manage notes per user. 
 This is custom app using MVC pattern using PHP and MySQL.
 
+***PLEASE NOTE:*** This project was a task for a challenge to create simple TODO list without using a PHP framework 
+in two working days. I spent 16 hours for this task, so not everything is going to be perfect :) 
+Also please note that this repository isn't going to be maintained as it's intention isn't to be used
+in production.
+
 Requirements: 
 * php: >=5.3.9
 * nginx or apache server
